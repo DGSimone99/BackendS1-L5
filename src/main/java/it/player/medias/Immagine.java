@@ -1,12 +1,11 @@
 package it.player.medias;
 
 import it.player.interfaces.Luminosità;
-import it.player.interfaces.Play;
 
 public class Immagine extends Media implements Luminosità {
-        public Immagine(String title) {
+        public Immagine(String title, int luminosità) {
             super(title, MediaType.IMMAGINE);
-            this.luminosità = 5;
+            this.luminosità = luminosità;
         }
 
         public void show() {
